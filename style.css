@@ -1,0 +1,104 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F5EDCF;
+    margin: 0;
+}
+h1 {
+    color:red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+h2{
+    font-family:'Times New Roman', Times, serif;
+}
+img {
+    max-width: 18%;
+    height: auto;
+    margin-top: 10px; /*Margen superior*/
+}
+p{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 200px;
+}
+#sandia{
+    text-align: justify;
+}
+#beneficios-lista {
+    color: rgb(25, 180, 25);
+    list-style-type: none; 
+    text-align: center;
+}
+.Boton{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+.centrar{
+    text-align: center;
+}
+.efectoimg:hover{
+    filter: saturate(200%);
+}
+header {
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 60%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin: 0 auto;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+hr.rojo {
+    background-color: red; /* Cambia el color a rojo */
+    height: 5px; /* Establece el grosor del hr */
+    margin: 10px 0; /* Agrega margen superior e inferior */
+    margin-left: 20px; /* Agrega margen izquierdo */
+    margin-right: 20px; /* Agrega margen derecho */
+    border-radius: 5px;
+}
